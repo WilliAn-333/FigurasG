@@ -4,6 +4,9 @@
 
 package ec.edu.espoch.figurasg;
 
+import ec.edu.espoch.figurasg.CUADRADO.Cuadrado;
+import ec.edu.espoch.figurasg.RECTANGULO.Rectangulo;
+
 /**
  *
  * @author USER
@@ -11,6 +14,24 @@ package ec.edu.espoch.figurasg;
 public class FigurasG {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Cuadrado objCuadrado=new Cuadrado(5);
+        
+        double Area=objCuadrado.calcurAreaCuadrado();
+        System.out.println("El area del Cuadrado es: "+Area);
+        
+        double Perimetro=objCuadrado.calcularPerimetroCuadrado();
+        System.out.println("El perimetro del cuadrado es: "+Perimetro);
+        
+        
+        Rectangulo objRectangulo=new Rectangulo(8,3);
+        
+        double Area1=objRectangulo.calcurArea();
+        System.out.println("El area de un Rectangulo es: "+Area1);
+        
+        double Perimetro1=objRectangulo.calcularPerimetro();
+        System.out.println("El perimetro de el Rectangulo es: "+Perimetro1);
+        
+
     }
+    
 }
