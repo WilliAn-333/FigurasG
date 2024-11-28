@@ -10,21 +10,23 @@ package ec.edu.espoch.figurasg.circulo;
  */
 public class Circulo {
     public double radio;
-    public Circulo(){
-    
+
+    // Constructor sin parámetros
+    public Circulo() {
     }
-public Circulo(double radio){
-    this.radio=radio;
-}    
-    public void imprimir(){
-        System.out.println("El radio es: "+ radio);
+
+    // Constructor con parámetro
+    public Circulo(double radio) {
+        this.radio = radio;
     }
-    public double calcularArea(){
-    return radio*radio;
-    
+
+    // Método para calcular el área
+    public double calcularArea() {
+        return Math.PI * radio * radio; // Fórmula: π * r^2
     }
-    public double calcularPerimetro(){
-    return radio*1;
-    
+
+    // Método para calcular el perímetro (circunferencia)
+    public double calcularPerimetro() {
+        return 2 * Math.PI * radio; // Fórmula: 2πr
     }
 }

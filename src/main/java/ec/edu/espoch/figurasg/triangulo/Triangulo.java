@@ -8,8 +8,6 @@ package ec.edu.espoch.figurasg.triangulo;
  *
  * @author DELL
  */
-import java.util.Scanner;
-
 public class Triangulo {
 
     private double base;
@@ -26,25 +24,12 @@ public class Triangulo {
         return Math.sqrt((base * base) + (altura * altura));
     }
 
-    public void imprimir() {
-        System.out.println("Base: " + base);
-        System.out.println("Altura: " + altura);
-        System.out.println("Hipotenusa: " + hipotenusa);
+    public double calcularArea() {
+        return (base * altura) / 2;
     }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Ingrese la base del triángulo: ");
-        double base = scanner.nextDouble();
-
-        System.out.print("Ingrese la altura del triángulo: ");
-        double altura = scanner.nextDouble();
-
-        Triangulo triangulo = new Triangulo(base, altura);
-
-        triangulo.imprimir();
-
-        scanner.close();
+    public double calcularPerimetro() {
+        return base + altura + hipotenusa;
     }
 }
+

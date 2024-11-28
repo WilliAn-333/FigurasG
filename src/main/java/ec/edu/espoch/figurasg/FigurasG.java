@@ -33,6 +33,20 @@ public class FigurasG {
         double Perimetro1=objRectangulo.calcularPerimetro();
         System.out.println("El perimetro de el Rectangulo es: "+Perimetro1);
         
+        
+        Circulo objCirculo = new Circulo(5); 
+        double areaCirculo = objCirculo.calcularArea();
+        System.out.println("El área del círculo es: " + areaCirculo);
+        double perimetroCirculo = objCirculo.calcularPerimetro();
+        System.out.println("El perímetro del círculo es: " + perimetroCirculo);
+         
+       
+        Triangulo objTriangulo = new Triangulo(8, 6);
+        double areaTriangulo = objTriangulo.calcularArea();
+        System.out.println("El área del triángulo es: " + areaTriangulo);
+        double perimetroTriangulo = objTriangulo.calcularPerimetro();
+        System.out.println("El perímetro del triángulo es: " + perimetroTriangulo);
+        
 
     }
     
