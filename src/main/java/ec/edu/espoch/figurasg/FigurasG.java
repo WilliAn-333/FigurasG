@@ -6,6 +6,8 @@ package ec.edu.espoch.figurasg;
 
 import ec.edu.espoch.figurasg.CUADRADO.Cuadrado;
 import ec.edu.espoch.figurasg.RECTANGULO.Rectangulo;
+import ec.edu.espoch.figurasg.circulo.Circulo;
+import ec.edu.espoch.figurasg.triangulo.Triangulo;
 
 /**
  *
